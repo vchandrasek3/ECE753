@@ -2,7 +2,7 @@ module top_level(x1, x2, x3, x4, x5, o1, o2);
 
 parameter WIDTH = 16;
 output o1, o2;
-input x1, x2, x3, x4, x5;
+input [WIDTH-1:0] x1, x2, x3, x4, x5;
 
 wire firsto1, firsto2, secondo1, secondo2, thirdo1, thirdo2, fourtho1, fourtho2, f1, g1, f2, g2;
 
