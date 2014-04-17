@@ -18,13 +18,13 @@ clk = 0;
 rst_n = 0;
 
 #5 
-functional_output = 52;
+functional_output = 65535;
 
 #20
 rst_n = 1;
 
 
-#5000
+#50000000
 $stop (); 
 
 end

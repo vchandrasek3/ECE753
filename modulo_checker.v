@@ -5,7 +5,7 @@ rst_n,
 out
 );
 
-parameter 			MODULO = 15;
+parameter 			MODULO = 65536;
 
 /* Inputs */
 input  		[15:0]	functional_output;
