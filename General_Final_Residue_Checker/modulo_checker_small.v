@@ -2,7 +2,8 @@ module modulo_checker_small(
 functional_output,
 clk,
 rst_n,
-out
+out,
+done
 );
 
 parameter 			MODULO = 65536;
@@ -15,6 +16,8 @@ input				rst_n;
 /* Outputs */
 output 	 reg [15:0] 	out;
 
+wire done;
+assign done = |out;
 
 /*
 reg			[15:0]	find_bus_select;
@@ -25,6 +28,7 @@ reg					done;
 
 assign out = done ? dout : 0;
 */
+
 
 
 always @ (posedge clk)
