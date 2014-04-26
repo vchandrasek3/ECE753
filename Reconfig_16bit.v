@@ -64,6 +64,12 @@ always @ (*) begin
 				new_x[i] = 1'bz;
 				new_y[i] = 1'bz;
 			end
+
+			else begin
+				new_x[i] = x0[i];
+				new_y[i] = y0[i];
+			end
+		
 		end
 
 	end
